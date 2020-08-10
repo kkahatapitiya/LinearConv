@@ -43,7 +43,7 @@ If you find our work useful, please consider citing our work:
 @inproceedings{kahatapitiya2021exploiting,
   title={Exploiting the Redundancy in Convolutional Filters for Parameter Reduction},
   author={Kahatapitiya, Kumara and Rodrigo, Ranga},
-  booktitle={2021 IEEE winter conference on applications of computer vision (WACV)},
+  booktitle={2021 IEEE Winter Conference on Applications of Computer Vision (WACV)},
   year={2021},
   organization={IEEE}
 }
