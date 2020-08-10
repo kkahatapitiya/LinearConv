@@ -1,16 +1,19 @@
-# LinearConv: Exploiting the Redundancy in Convolutional Filters for Parameter Reduction.
+# Exploiting the Redundancy in Convolutional Filters for Parameter Reduction
 
-This repository contains the source for our paper [LinearConv: Exploiting the Redundancy in Convolutional Filters for Parameter Reduction](https://arxiv.org/pdf/1907.11432).
+This repository contains the source for our WACV 2021 paper [Exploiting the Redundancy in Convolutional Filters for Parameter Reduction](https://arxiv.org/pdf/1907.11432).
 
 ### Introduction
 
-Convolutional Neural Networks (CNNs) have achieved state-of-the-art performance in many computer vision tasks over the years. However, such performance comes at a cost of computation and memory intensive network designs, suggesting potential improvements in efficiency. Convolutional layers of CNNs partially account for this inefficiency, as they are known to learn redundant features. In this work, we exploit this redundancy, observing it as the correlation between convolutional weights (filters) of a layer, and propose an alternative to reproduce it efficiently. The proposed ‘LinearConv’ layer learns a set of orthogonal filters, and a set of coefficients that linearly combine them to introduce a controlled redundancy. We introduce a correlation-based regularization loss to achieve such flexibility over redundancy, i.e., correlation between filters, and control the number of parameters in turn. This is designed as a plug-and-play layer to conveniently replace a conventional convolutional layer, without any modification required in the network architecture or the hyperparameter settings. Our experiments verify that LinearConv-based models achieve a performance on-par with their counterparts, with up to 50% of parameter reduction, and having the same compute requirement at inference.
+Convolutional Neural Networks (CNNs) have achieved state-of-the-art performance in many computer vision tasks over the years. However, this comes at the cost of heavy computation and memory intensive network designs, suggesting potential improvements in efficiency. Convolutional layers of CNNs partly account for such an inefficiency, as they are known to learn redundant features. In this work, we exploit this redundancy, observing it as the correlation between convolutional filters of a layer, and propose an alternative approach to reproduce it efficiently. The proposed 'LinearConv' layer learns a set of orthogonal filters, and a set of coefficients that linearly combines them to introduce a controlled redundancy. We introduce a correlation-based regularization loss to achieve such flexibility over redundancy, and control the number of parameters in turn. This is designed as a plug-and-play layer to conveniently replace a conventional convolutional layer, without any additional changes required in the network architecture or the hyperparameter settings. Our experiments verify that LinearConv models achieve a performance on-par with their counterparts, with almost a 50% reduction in parameters on average, and the same computational requirement and speed at inference.
 
 Proposed LinearConv operation
 <img src="./figs/conv_img.png" width="500">
 
 Classification Results
 <img src="./figs/classi.png" width="600">
+
+Comparison with SOTA
+<img src="./figs/sota.png" width="600">
 
 ### Dependencies
 
@@ -37,11 +40,12 @@ Classification Results
 
 If you find our work useful, please consider citing our work:
 ```
-@article{kahatapitiya2019linearconv,
-  title={LinearConv: Regenerating Redundancy in Convolution Filters as Linear Combinations for Parameter Reduction},
+@inproceedings{kahatapitiya2021exploiting,
+  title={Exploiting the Redundancy in Convolutional Filters for Parameter Reduction},
   author={Kahatapitiya, Kumara and Rodrigo, Ranga},
-  journal={arXiv preprint arXiv:1907.11432},
-  year={2019}
+  booktitle={2021 IEEE winter conference on applications of computer vision (WACV)},
+  year={2021},
+  organization={IEEE}
 }
 ```
 
