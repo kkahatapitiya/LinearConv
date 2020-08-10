@@ -13,7 +13,7 @@ Classification Results
 <img src="./figs/classi.png" width="600">
 
 Comparison with SOTA
-<img src="./figs/sota.png" width="600">
+<img src="./figs/sota.png" width="400">
 
 ### Dependencies
 
