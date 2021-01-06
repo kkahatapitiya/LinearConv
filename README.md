@@ -40,12 +40,11 @@ Comparison with SOTA
 
 If you find our work useful, please consider citing our work:
 ```
-@inproceedings{kahatapitiya2021exploiting,
+@inproceedings{kahatapitiyaexploiting,
   title={Exploiting the Redundancy in Convolutional Filters for Parameter Reduction},
   author={Kahatapitiya, Kumara and Rodrigo, Ranga},
-  booktitle={2021 IEEE Winter Conference on Applications of Computer Vision (WACV)},
-  year={2021},
-  organization={IEEE}
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={1410--1420}
 }
 ```
 
